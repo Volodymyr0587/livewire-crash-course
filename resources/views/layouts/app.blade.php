@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>
-            {{ $title ?? 'Hostinger Livewire' }}
+            {{ $title ?? 'Livewire' }}
         </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -21,7 +21,7 @@
                 <div class="mx-auto">
                     @yield('content')
                     @isset($slot)
-                    {{ $slot }}
+                        {{ $slot }}
                     @endisset
                 </div>
                 <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
