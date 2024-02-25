@@ -3,12 +3,14 @@
 namespace App\Livewire\Tasks;
 
 use App\Models\Task;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 
 class TaskIndex extends Component
 {
     public $tasks;
 
+    #[Rule('required')]
     public $name;
 
     public function mount()
@@ -18,6 +20,8 @@ class TaskIndex extends Component
 
     public function save()
     {
+        $this->validate();
+
         Task::create([
             'user_id' => 1,
             'name' => $this->name
