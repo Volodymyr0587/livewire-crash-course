@@ -12,4 +12,4 @@ Route::get('/', function () {
 
 Route::get('/tasks', TaskIndex::class);
 Route::get('/tasks/create', TaskCreate::class);
-Route::get('/tasks/{id}', TaskShow::class);
+Route::get('/tasks/{task}', TaskShow::class);

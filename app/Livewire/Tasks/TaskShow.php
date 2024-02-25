@@ -9,9 +9,9 @@ class TaskShow extends Component
 {
     public Task $task;
 
-    public function mount($id)
+    public function mount(Task $task)
     {
-        $this->task = Task::findOrFail($id);
+        $this->task = $task;
     }
 
     public function render()
