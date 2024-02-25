@@ -8,7 +8,18 @@
         <span class="absolute -ml-6 mt-2">
             <span x-text="$wire.name.length"></span>
         </span>
-        <x-button :button="$button" :click="'save'" />
+
+        <x-button
+            :button="$button"
+            :click="'save'"
+        />
+        <div class="text-red-500">
+            @error('name')
+                <span>
+                    {{ $message }}
+                </span>
+            @enderror
+        </div>
     </div>
     @foreach ($tasks as $task)
         <x-task-item :task="$task" />

@@ -10,7 +10,7 @@ class TaskIndex extends Component
 {
     public $tasks;
 
-    #[Rule('required')]
+    #[Rule(['required', 'max:10', 'string'])]
     public $name;
 
     public function mount()
