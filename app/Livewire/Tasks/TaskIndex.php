@@ -9,9 +9,16 @@ class TaskIndex extends Component
 {
     public $tasks;
 
+    public $name;
+
     public function mount()
     {
         $this->tasks = Task::with('user')->get();
+    }
+
+    public function add()
+    {
+        dd($this->name);
     }
 
     public function render()
