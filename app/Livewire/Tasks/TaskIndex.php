@@ -17,6 +17,9 @@ class TaskIndex extends Component
     public function render()
     {
         return view('livewire.tasks.task-index')
-            ->title('Tasks - Livewire');
+            ->title('Tasks - Livewire')
+            ->with([
+                'button' => 'New Task'
+            ]);
     }
 }
