@@ -5,3 +5,7 @@
     >
     {{ $button }}
 </button>
+
+<div wire:loading>
+    <x-spiner />
+</div>
