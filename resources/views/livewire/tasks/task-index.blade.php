@@ -8,7 +8,7 @@
         <span class="absolute -ml-6 mt-2">
             <span x-text="$wire.name.length"></span>
         </span>
-        <x-button :button="$button" />
+        <x-button :button="$button" :click="'save'" />
     </div>
     @foreach ($tasks as $task)
         <x-task-item :task="$task" />

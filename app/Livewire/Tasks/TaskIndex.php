@@ -16,9 +16,14 @@ class TaskIndex extends Component
         $this->tasks = Task::with('user')->get();
     }
 
-    public function add()
+    public function save()
     {
-        dd($this->name);
+        Task::create([
+            'user_id' => 1,
+            'name' => $this->name
+        ]);
+
+        return $this->redirect(route('tasks'));
     }
 
     public function render()
