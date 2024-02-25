@@ -1,3 +1,3 @@
 <div>
-    Task Index
+    {{ $tasks }}
 </div>
