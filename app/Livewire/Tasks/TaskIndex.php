@@ -73,6 +73,12 @@ class TaskIndex extends Component
         return $this->redirect(route('tasks'));
     }
 
+    public function delete(Task $task)
+    {
+        $task->delete();
+        session()->flash('message', 'Task successfully deleted.');
+    }
+
     public function render()
     {
         return view('livewire.tasks.task-index')
