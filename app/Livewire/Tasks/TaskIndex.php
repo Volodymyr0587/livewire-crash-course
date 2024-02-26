@@ -18,6 +18,45 @@ class TaskIndex extends Component
         $this->tasks = Task::with('user')->get();
     }
 
+    public function hydrate()
+    {
+        // dd('OK');
+    }
+
+    public function boot()
+    {
+        // $this->tasks = Task::with('user')->get();
+    }
+
+    public function updating()
+    {
+        //
+    }
+
+    public function updated()
+    {
+        //
+    }
+
+    public function rendering($view, $data)
+    {
+        // $data['name'] = 'Volodymyr';
+
+        // dd($data);
+    }
+
+    public function rendered($view, $html)
+    {
+        // dd($html);
+    }
+
+    public function dehydrate()
+    {
+        // $this->tasks = $this->tasks->toArray();
+
+        // dd($this->tasks);
+    }
+
     public function save()
     {
         $this->validate();
