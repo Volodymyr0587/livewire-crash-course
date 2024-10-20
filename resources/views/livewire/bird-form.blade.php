@@ -12,4 +12,12 @@
             <button>A a New Bird Count Entry</button>
         </div>
     </form>
+
+    <div>
+        @foreach ($entries as $entry)
+            <div>
+                {{ $entry->notes }}: {{ $entry->bird_count }}
+            </div>
+        @endforeach
+    </div>
 </div>

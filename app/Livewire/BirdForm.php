@@ -21,6 +21,8 @@ class BirdForm extends Component
     }
     public function render()
     {
-        return view('livewire.bird-form');
+        return view('livewire.bird-form', [
+            'entries' => Entry::all(),
+        ]);
     }
 }
