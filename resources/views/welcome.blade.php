@@ -7,7 +7,6 @@
     <title>Livewire Crash Course</title>
 </head>
 <body>
-    <livewire:lazy lazy/>
-    Here's some additional information for you here.
+    <livewire:bird-form />
 </body>
 </html>

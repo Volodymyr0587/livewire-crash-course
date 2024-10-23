@@ -23,8 +23,14 @@
 
     <div>
         @foreach ($entries as $entry)
-            <div>
-                {{ $entry->notes }}: {{ $entry->bird_count }}
+            <div wire:key='{{ $entry->id }}'>
+                <div>
+                    {{ $entry->notes }}
+                </div>
+                <div>
+                    {{ $entry->bird_count }}
+                </div>
+                <button wire:click='delete({{ $entry->id }})'>Delete</button>
             </div>
         @endforeach
     </div>

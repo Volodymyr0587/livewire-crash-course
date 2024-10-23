@@ -30,6 +30,11 @@ class BirdForm extends Component
     //     $this->birdCount = $birdCount;
     // }
 
+    public function delete($id)
+    {
+        Entry::find($id)->delete();
+    }
+
     public function render()
     {
         return view('livewire.bird-form', [
