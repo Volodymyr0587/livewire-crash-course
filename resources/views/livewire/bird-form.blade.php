@@ -23,7 +23,7 @@
 
     <div>
         @foreach ($entries as $entry)
-            <div wire:key='{{ $entry->id }}'>
+            <div wire:key='{{ $entry->id }}' wire:transition>
                 <div>
                     {{ $entry->notes }}
                 </div>
