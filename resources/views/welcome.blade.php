@@ -7,6 +7,6 @@
     <title>Livewire Crash Course</title>
 </head>
 <body>
-    <livewire:bird-form />
+
 </body>
 </html>
