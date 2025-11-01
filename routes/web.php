@@ -13,5 +13,4 @@ Route::get('/', function () {
 Route::get('/counter', Counter::class);
 Route::get('/birds', BirdForm::class);
 Route::get('/lazy', Lazy::class)->lazy();
-
 Route::get('/bookmarks', Bookmarks::class);
