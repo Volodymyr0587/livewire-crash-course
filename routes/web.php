@@ -6,7 +6,6 @@ use App\Livewire\Counter;
 use App\Livewire\Lazy;
 use Illuminate\Support\Facades\Route;
 
-
 Route::get('/', function () {
     return view('welcome');
 });
